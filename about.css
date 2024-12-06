@@ -1,0 +1,67 @@
+body {
+  background-color: rgb(245, 233, 237);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Make the body take at least the full height of the viewport */
+}
+
+.main {
+  flex-grow: 1; /* Allows the content to take up the available space */
+}
+
+.home {
+  display: inline-block;
+  padding: 1px 5px;
+  color: rgb(216, 87, 173);
+  background-color: transparent;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-top: 30px;
+  transition: 0.3s ease;
+  transition-property: background-color, color;
+  top: 15px;
+  right: 38px;
+  position: absolute;
+}
+
+.home:hover {
+  font-weight: bolder;
+}
+
+.header {
+  display: flex;
+}
+.description {
+  display: flex;
+  justify-content: center;
+  place-items: center;
+}
+
+.her {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.content {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  place-items: center;
+  justify-content: center;
+  margin-top: 8rem;
+}
+
+.footer {
+  background-color: #f1f1e8;
+  color: rgb(212, 212, 212);
+  text-align: center;
+  font-size: 1.2rem;
+  width: 100%; /* Full width */
+  padding: 8px 0; /* Add padding to make it look better */
+  position: relative; /* Ensures it stays at the bottom */
+  bottom: -68px; /* Stick it to the bottom of the viewport */
+}
